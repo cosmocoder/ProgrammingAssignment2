@@ -1,4 +1,4 @@
-## Caching the inverse of a matrix
+## Functions to calculate and cache the inverse of a matrix
 
 
 ## This function creates a special "matrix" object that can cache its inverse
@@ -34,7 +34,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
 
-    # check if the inverse has already been cached
+    # check if the inverse has already been cached, and if it is then return it
     inv <- x$getInv()
 
     if( !is.null(inv) ) {
